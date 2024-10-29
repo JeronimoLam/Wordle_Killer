@@ -107,10 +107,6 @@ Wordle Killer offers a variety of command-line arguments to customize your searc
     - Default: console
     - Example: -o resultados.txt
 
-```bash
-git clone https://github.com/tu-usuario/wordle-killer.git
-cd wordle-killer
-```
 
 ### Examples
 
@@ -129,8 +125,8 @@ Find all 5-letter Spanish words where:
 - The letter j is in position 4.
 - The letter a is in position 5.
 - The word contains a and o but:
-- 'a' is not in positions 1 and 2.
-- 'o' is not in positions 4 and 5.
+    - 'a' is not in positions 1 and 2.
+    - 'o' is not in positions 4 and 5.
 - The word does not contain u, t, s, b, n, c, d, r.
 - Save the results to a.txt.
 
