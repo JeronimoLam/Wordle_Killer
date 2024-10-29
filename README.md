@@ -14,7 +14,6 @@
 - [Output](#output)
 - [Word List File](#word-list-file)
 - [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
@@ -43,6 +42,7 @@ cd wordle-killer
 ```
 
 ### Install Required Packages
+
 Wordle Killer relies on the unidecode library for handling accented characters. Install it using pip:
 
 ```bash
@@ -65,47 +65,47 @@ python wordle_killerV4.py [OPTIONS]
 
 Wordle Killer offers a variety of command-line arguments to customize your search:
 
-- --language, --idioma, -g
-Description: Specify the language of the word list.
-Choices: spanish, english
-Default: spanish
-Example: -g english
+- **_--language, --idioma, -g_**
+    - Description: Specify the language of the word list.
+    - Choices: spanish, english
+    - Default: spanish
+    - Example: -g english
 
-- --length, --longitud, -l
-Description: Specify the length of the words to search for.
-Type: Integer
-Example: -l 5
+- **_--length, --longitud, -l_**
+    - Description: Specify the length of the words to search for.
+    - Type: Integer
+    - Example: -l 5
 
-- --contains, --contiene, -c
-Description: Specify letters that the word must contain, separated by commas.
-Format: a,d,e
-Example: -c a,i,r
+- **_--contains, --contiene, -c_**
+    - Description: Specify letters that the word must contain, separated by commas.
+    - Format: a,d,e
+    - Example: -c a,i,r
 
-- --not-contains, --no-contiene, -nc
-Description: Specify letters that the word must not contain, separated by commas.
-Format: x,z
-Example: -nc u,t,s,b,n,c,d,r
+- **_--not-contains, --no-contiene, -nc_**
+    - Description: Specify letters that the word must not contain, separated by commas.
+    - Format: x,z
+    - Example: -nc u,t,s,b,n,c,d,r
 
-- --exact, --exacto, -e
-Description: Specify exact letter positions in the format positionletter, separated by commas.
-Format: 2f,4a,5t
-Example: -e 4j,5a
+- **_--exact, --exacto, -e_**
+    - Description: Specify exact letter positions in the format positionletter, separated by commas.
+    - Format: 2f,4a,5t
+    - Example: -e 4j,5a
 
-- --contained-prohibited, --contiene-prohibidas, -cp
-Description: Specify letters that the word must contain and cannot be in certain positions. Use the format posletter, separated by commas.
-Format: 1a,4o,2a,5o
-Example: -cp 1a,4o,2a,5o,2o,4a,5o
+- **_--contained-prohibited, --contiene-prohibidas, -cp_**
+    - Description: Specify letters that the word must contain and cannot be in certain positions. Use the format posletter, separated by commas.
+    - Format: 1a,4o,2a,5o
+    - Example: -cp 1a,4o,2a,5o,2o,4a,5o
 
-- --accents, --tildes, -t
-Description: Filter words with or without accents.
-Choices: true, false
-Default: true
-Example: -t false
+- **_--accents, --tildes, -t_**
+    - Description: Filter words with or without accents.
+    - Choices: true, false
+    - Default: true
+    - Example: -t false
 
-- --out, --salida, -o
-Description: Specify the output destination. Use console to print to the terminal or provide a filename to save the results.
-Default: console
-Example: -o resultados.txt
+- **_--out, --salida, -o_**
+    - Description: Specify the output destination. Use console to print to the terminal or provide a filename to save the results.
+    - Default: console
+    - Example: -o resultados.txt
 
 ```bash
 git clone https://github.com/tu-usuario/wordle-killer.git
